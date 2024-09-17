@@ -1,0 +1,34 @@
+[
+    {
+        "cfgs": [], //控制流图（CFGs）为空，表示此更改不涉及控制流更改
+        "code": "import jline.internal.Preconditions", // 被删除的代码行
+        "dfgs": [], // 数据流图（DFGs）为空，表示此更改不涉及数据流更改
+        "fName": "server_tserver_src_main_java_org_apache_accumulo_tserver_ActiveAssignmentRunnable.java", // 文件名
+        "fieldParents": [], // 字段父项为空，表示此更改不涉及任何字段继承关系的更改
+        "isDel": true, // 表示此行代码被删除
+        "lineBeg": 21, // 更改开始的行号
+        "lineEnd": 21, // 更改结束的行号，与lineBeg相同，表示这是单行更改
+        "lineMapIndex": 1, // 内部映射或索引中的位置或标识
+        "methodParents": [], // 方法父项为空，表示此更改不涉及任何方法继承关系的更改
+        "nodeIndex": 0, // 节点索引，唯一标识此更改
+        "rootcause": true, // 表明这个更改被认为是某个问题的根本原因
+        "commits": [ // 与此更改相关的提交
+            "995080c44c2bf296eb58764cab6f536ce5a808a1" // 提交哈希值
+        ]
+    },
+    {
+        "cfgs": [], // 控制流图（CFGs）为空
+        "code": "import com.google.common.base.Preconditions", // 被添加的代码行
+        "dfgs": [], // 数据流图（DFGs）为空
+        "fName": "server_tserver_src_main_java_org_apache_accumulo_tserver_ActiveAssignmentRunnable.java", // 文件名
+        "fieldParents": [], // 字段父项为空
+        "isDel": false, // 表示此行代码被添加
+        "lineBeg": 21, // 更改开始的行号
+        "lineEnd": 21, // 更改结束的行号
+        "lineMapIndex": 0, // 内部映射或索引中的位置或标识
+        "methodParents": [], // 方法父项为空
+        "nodeIndex": 1, // 节点索引，唯一标识此更改
+        "rootcause": false, // 表明这个更改不是某个问题的根本原因
+        "commits": [] // 与此更改相关的提交为空
+    }
+]
