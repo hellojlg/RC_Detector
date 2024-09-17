@@ -52,5 +52,6 @@ Run `python train.py --lr --heads` to run the experimental:
 Run `python train.py --model_type` to run the experimental:
 - `--model_type`: the embedding layer for RC_Detector
 - `choices=["graphcodebert", "codet5", "unixcoder", "codebert"]`
+
 For these pre-trained models, you can download them from Hugging Face. For example, the CodeBERT model can be downloaded from [this URL](https://huggingface.co/microsoft/codebert-base/tree/main) and then placed into the `microsoft/codebert-base` directory.
 """
