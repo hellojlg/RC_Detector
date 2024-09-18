@@ -1,1 +1,6 @@
-
+vocab
+tokenizer_config
+special_tokens_map
+pytorch_model.bin
+merges
+config
