@@ -25,13 +25,14 @@ Python library dependencies:
 There are six folders, each representing an experiment.
 They share some common files with the same functionality, but details may vary depending on the specific experiment:
 
-train.py: The main training script, which configures the experiment type via command-line parameters.
-model.py: Contains the model definition and initialization.
-genMiniGraphs.py: Generates and processes graph data.
-genBatch.py: Generates batches of data for model training.
-genPairs.py: Creates sample pairs for ranking models.
-genPyG.py: Converts data into a format supported by PyTorch Geometric.
-eval.py: Evaluates the model's performance.
+- **`train.py`**: The main training script, which configures the experiment type via command-line parameters.
+- **`model.py`**: Contains the model definition and initialization.
+- **`genMiniGraphs.py`**: Generates and processes graph data.
+- **`genBatch.py`**: Generates batches of data for model training.
+- **`genPairs.py`**: Creates sample pairs for ranking models.
+- **`genPyG.py`**: Converts data into a format supported by PyTorch Geometric.
+- **`eval.py`**: Evaluates the model's performance.
+
 
 ### FOR RQ1:
 - **DL_apporches fold**: the code of DL approaches,including Bi-LSTM.
