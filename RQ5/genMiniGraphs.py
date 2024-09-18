@@ -20,19 +20,11 @@ tokenizer = AutoTokenizer.from_pretrained("../microsoft/codebert-base")
 
 #读取所有的测试集训练集的数据
 def getAllGraph():
-    cnt=0
-    dataset1 = json.load(open("../dataset1.json"))
-    dataset2 = json.load(open("../dataset2.json"))
-    dataset3 = json.load(open("../dataset3.json"))
-    all_data = []
-    all_data.extend(dataset1)
-    all_data.extend(dataset2)
-    all_data.extend(dataset3)
-    occurrences={}
+
     fDirMap = {}
-    for i in all_data:
-        testDir = f"{i}"
-        fDir = f"../trainData/{i}"
+    for i in range(0, 1572):
+        testDir = f"test{i}"
+        fDir = f"../trainData/test{i}"
         graphPath = f"{fDir}/graph1.json"
 
         with open(fDir + "/info.json", "r") as f:
@@ -42,10 +34,6 @@ def getAllGraph():
         with open(graphPath, "r") as f:
             graph = json.load(f)
         fDirMap[testDir] = graph
-        if graph.__len__() in occurrences:
-            occurrences[graph.__len__()] += 1
-        else:
-            occurrences[graph.__len__()] = 1
     return fDirMap
 
 
