@@ -36,23 +36,28 @@ They share some common files with the same functionality, but details may vary d
 
 ### FOR RQ1:
 - **DL_apporches fold**: the code of DL approaches,including Bi-LSTM.
-Run `python dl_approches.py ` to run the experimental.
+
+Run `python dl_approches.py ` to run the experiment.
 - **ML_apporches fold**: the code of ML approaches,including RF,LR,SVM,XGB,KNN.
-Run `python ml_approches.py ` to run the experimental.
+
+Run `python ml_approches.py ` to run the experiment.
 -** Neural SZZ :the code of Neural SZZ.
-Run `python train.py ` to run the experimental.
+
+Run `python train.py ` to run the experiment.
 
 ### FOR RQ2: 
 key1.py :the model use RC_Detector-g.
 key1.py :the model use RC_Detector-h.
-RC_Detector-g.py：implenment of RC_Detector-g.
+RC_Detector-g.py： implement of RC_Detector-g.
+
 Run `python train.py --project` to run the experimental:
 - `--project`: the individual components RC_Detector-g and RC_Detector-h.
 - `choices=[key1,key2]`
 
 ### FOR RQ3:    
 AllRnn.py：implenment of all rnn_type.
-Transformer_implementation：implenment of Transformer.
+Transformer_implementation： implement of Transformer.
+
 Run `python train.py --rnn_type` to run the experimental:
 - `--rnn_type`: the rnn type for RC_Detector.
 - `choices=["gru","lstm","transformer","gru1", "gru2", "gru3"]`
@@ -62,6 +67,7 @@ Additive Attention.py：implenment of RC_Detector_Additive Attention.
 Cosine Similarity Attention.py：implenment of RC_Detector_Cosine Similarity Attention.
 Gaussian Kernel Function.py：implenment of RC_Detector_Gaussian Kernel Function.
 GAT.py：implenment of RC_Detector_GAT.
+
 Run `python train.py --attention` to run the experimental:
 - `--attention`: the attention mechanisms for RC_Detector.
 - `choices=["Additive Attention","Cosine Similarity Attention","GAT", "Gaussian Kernel Function"]`
