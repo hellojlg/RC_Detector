@@ -41,7 +41,7 @@ Run `python dl_approches.py ` to run the experiment.
 - **ML_apporches fold**: the code of ML approaches,including RF,LR,SVM,XGB,KNN.
 
 Run `python ml_approches.py ` to run the experiment.
--** Neural SZZ :the code of Neural SZZ.
+- **Neural SZZ**: the code of Neural SZZ.
 
 Run `python train.py ` to run the experiment.
 
