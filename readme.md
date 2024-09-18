@@ -46,40 +46,40 @@ Run `python ml_approches.py ` to run the experiment.
 Run `python train.py ` to run the experiment.
 
 ### FOR RQ2: 
-key1.py :the model use RC_Detector-g.
-key1.py :the model use RC_Detector-h.
-RC_Detector-g.py： implement of RC_Detector-g.
+- **key1.py**: The model uses RC_Detector-g.
+- **key2.py**: The model uses RC_Detector-h.
+- **RC_Detector-g.py**: Implementation of RC_Detector-g.
 
-Run `python train.py --project` to run the experimental:
-- `--project`: the individual components RC_Detector-g and RC_Detector-h.
-- `choices=[key1,key2]`
+Run `python train.py --project` to run the experiment:
+- `--project`: The individual components RC_Detector-g and RC_Detector-h.
+- `choices=[key1, key2]`
 
 ### FOR RQ3:    
-AllRnn.py：implenment of all rnn_type.
-Transformer_implementation： implement of Transformer.
+- **AllRnn.py**: Implementation of all RNN types.
+- **Transformer_implementation.py**: Implementation of Transformer.
 
-Run `python train.py --rnn_type` to run the experimental:
-- `--rnn_type`: the rnn type for RC_Detector.
-- `choices=["gru","lstm","transformer","gru1", "gru2", "gru3"]`
+Run `python train.py --rnn_type` to run the experiment:
+- `--rnn_type`: The RNN type for RC_Detector.
+- `choices=["gru", "lstm", "transformer", "gru1", "gru2", "gru3"]`
 
 ### FOR RQ4:    
-Additive Attention.py：implenment of RC_Detector_Additive Attention.
-Cosine Similarity Attention.py：implenment of RC_Detector_Cosine Similarity Attention.
-Gaussian Kernel Function.py：implenment of RC_Detector_Gaussian Kernel Function.
-GAT.py：implenment of RC_Detector_GAT.
+- **Additive Attention.py**: Implementation of RC_Detector with Additive Attention.
+- **Cosine Similarity Attention.py**: Implementation of RC_Detector with Cosine Similarity Attention.
+- **Gaussian Kernel Function.py**: Implementation of RC_Detector with Gaussian Kernel Function.
+- **GAT.py**: Implementation of RC_Detector with GAT.
 
-Run `python train.py --attention` to run the experimental:
-- `--attention`: the attention mechanisms for RC_Detector.
-- `choices=["Additive Attention","Cosine Similarity Attention","GAT", "Gaussian Kernel Function"]`
+Run `python train.py --attention` to run the experiment:
+- `--attention`: The attention mechanisms for RC_Detector.
+- `choices=["Additive Attention", "Cosine Similarity Attention", "GAT", "Gaussian Kernel Function"]`
 
 ### FOR RQ5:    
-Run `python train.py --lr --heads` to run the experimental:
-- `--lr`: learning rate for RC_Detector, default: 0.000005.
-- `--heads`: the number of heads for RC_Detector, default: 8.
+Run `python train.py --lr --heads` to run the experiment:
+- `--lr`: Learning rate for RC_Detector, default: 0.000005.
+- `--heads`: The number of heads for RC_Detector, default: 8.
 
 ### FOR RQ6:    
-Run `python train.py --model_type` to run the experimental:
-- `--model_type`: the embedding layer for RC_Detector.
+Run `python train.py --model_type` to run the experiment:
+- `--model_type`: The embedding layer for RC_Detector.
 - `choices=["graphcodebert", "codet5", "unixcoder", "codebert"]`
 
 For these pre-trained models, you can download them from Hugging Face. For example, the CodeBERT model can be downloaded from [this URL](https://huggingface.co/microsoft/codebert-base/tree/main) and then placed into the `microsoft/codebert-base` directory.
